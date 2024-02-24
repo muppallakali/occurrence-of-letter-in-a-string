@@ -1,0 +1,19 @@
+// Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string.
+// Sample arguments : 'prasad','a'
+// Expected output : 2
+
+function ab(string,char){
+    let smallString=string.toLowerCase()
+    let smallChar=char.toLowerCase()
+    let splitString=smallString.split('')
+    let count=0
+    for(let i=0;i<splitString.length;i++)
+    {
+        if(smallChar.includes(smallString[i]))
+        {
+        count++
+    }
+    }
+    console.log(count)
+}
+ab('prasad','a')
